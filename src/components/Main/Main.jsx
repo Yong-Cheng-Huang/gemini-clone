@@ -16,7 +16,7 @@ const Main = () => {
 
   const handleKeyDown = (e) => {
     if (e.key === "Enter" && input) {
-      onSent(); // 在按下 Enter 並且輸入框有值時調用 onSent 函式
+      onSent();
     }
   };
 
@@ -78,7 +78,7 @@ const Main = () => {
           <div className="search-box">
             <input
               onChange={(e) => setInput(e.target.value)}
-              onKeyDown={handleKeyDown} // 監聽按鍵事件
+              onKeyDown={handleKeyDown}
               value={input}
               type="text"
               placeholder="Enter a prompt here"
